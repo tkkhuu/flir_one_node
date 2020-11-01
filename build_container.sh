@@ -1,0 +1,1 @@
+docker build ./docker -f docker/Dockerfile -t flir_driver

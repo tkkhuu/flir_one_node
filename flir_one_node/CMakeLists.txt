@@ -110,7 +110,6 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES flir_one_node
   CATKIN_DEPENDS image_transport roscpp rospy sensor_msgs std_msgs
-  DEPENDS system_lib
 )
 
 ###########
