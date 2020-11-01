@@ -16,4 +16,6 @@ docker run -it \
            --user=$CONTAINER_USER \
            --volume=`pwd`/shared_dir:/home/$CONTAINER_USER/shared_dir \
            --volume=`pwd`/flir_one_node:/home/$CONTAINER_USER/shared_dir/ros_ws/src/flir_one_node \
+           --volume=/dev:/dev \
+           --privileged \
            flir_driver

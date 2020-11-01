@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y \
     # ros-${ROS_DISTRO}-cv-bridge
 
 RUN apt-get install -y \
-    libusb-1.0-0-dev
+    libusb-1.0-0-dev \
+    udev \
+    usbutils
 
 RUN apt-get update && apt-get install -y \
     vim \
